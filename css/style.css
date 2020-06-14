@@ -1,0 +1,64 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    margin: 0;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.perspective {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.perspective__group {
+    position: relative;
+    height: 100vh;
+    padding-top: 200vh;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.perspective__layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50vh 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.perspective__layer--back {
+    width: 100%;
+    height: 100%;
+}
+
+.perspective__layer--back--right {
+    transform: translateZ(-1px) translate(50%, 20%) scale(1);
+    align-items: flex-end;
+}
+
+.perspective__layer--back--left {
+    transform: translateZ(-3px) translate(-125%, 0) scale(3) ;
+}
+
+.perspective__layer--base {
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0px);
+}
+
+.perspective__layer__title {
+    max-width: 40%;
+}
