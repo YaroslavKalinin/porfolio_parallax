@@ -1,4 +1,10 @@
-/* Global */
+/*               */
+/* 1.Global      */
+/* 2.Perspective */
+/*               */
+
+
+/* 1. Global */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 html, body {
@@ -12,6 +18,7 @@ html, body {
     box-sizing: border-box;
 }
 
+/* 2. Perspective */
 .perspective {
     perspective: 1px;
     height: 100vh;
@@ -59,6 +66,9 @@ html, body {
     transform: translateZ(0px);
 }
 
+
+/* 3.Helpers */
 .perspective__layer__title {
-    max-width: 40%;
+  /*  max-width: 40%; */
 }
+
