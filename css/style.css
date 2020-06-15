@@ -68,7 +68,32 @@ html, body {
 
 
 /* 3.Helpers */
-.perspective__layer__title {
-  /*  max-width: 40%; */
+.title {
+  max-width: 70%;
 }
 
+
+.card {
+    background-color: dimgray;
+    padding: 10px;
+    width: 80%;
+    border-radius: 20px 0px 20px 0px;
+    color: white;
+}
+
+/* Breakpoints:                 */
+/* large  >= 1100px             */
+/* large  >  768px   >= medium  */
+/* medium >  576px   >= small   */
+
+
+
+@media screen and (max-width: 576px) {
+    .card {
+        width: 90%;
+        font-size: 0.7rem;
+    }
+    .title {
+        padding-left: 10px;
+    }
+}
