@@ -86,8 +86,6 @@ html, body {
 /* large  >  768px   >= medium  */
 /* medium >  576px   >= small   */
 
-
-
 @media screen and (max-width: 576px) {
     .card {
         width: 90%;
@@ -95,5 +93,17 @@ html, body {
     }
     .title {
         padding-left: 10px;
+    }
+}
+
+/* Older browsers */
+
+@supports not (perspective: 1px) {
+    .perspective__group {
+        padding: 0;
+    }
+
+    .perspective__layer--back {
+        display: none;
     }
 }
